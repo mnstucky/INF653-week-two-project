@@ -26,6 +26,7 @@ if (!isset($age) || !$age) {
 }
 ?>
 
+<!-- Display the page -->
 <html lang="en">
 
 <head>
@@ -40,6 +41,7 @@ if (!isset($age) || !$age) {
 		<p>Today is <?php echo date('m-d-Y')?></p>
 	</header>
 	<?php
+	// If an error, display correct error message and quit
 	if ($isError) {
 		echo "<p>$nameErrorMessage</p>";
 		echo "<p>$ageErrorMessage</p>";
