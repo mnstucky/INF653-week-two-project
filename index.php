@@ -49,7 +49,7 @@ if (!isset($age) || !$age) {
 	}
 	?>
 	<h1>Hello, my name is <?php echo htmlspecialchars("$firstname $lastname") ?>.</h1>
-	<p>I am <?php echo $negation ?>old enough to vote in the United States.</p>
+	<p>I am <?php echo $age ?> years old, and I am <?php echo $negation ?>old enough to vote in the United States.</p>
 	<p>That means I'm at least <span class="underlined"><?php echo number_format($ageInDays) ?></span> days old.</p>
 </body>
 
