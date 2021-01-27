@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 2.5rem;
+  background: rgb(80, 80, 80);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* Credit for inspiring the h1 animation: https://dev.to/gabe/fluid-css-gradient-animation-3b2 */
+h1 {
+  animation: flow 30s ease-in-out infinite;
+  background: linear-gradient(-60deg, #1505aa, #904e95, #e73c7e, #8b0000);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+p {
+  margin-block-start: 0;
+}
+header p {
+  margin: 0;
+  margin-right: 1rem;
+}
+.underlined {
+  position: relative;
+}
+.underlined::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  background: black;
+}
